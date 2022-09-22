@@ -10858,3 +10858,7 @@ textarea.form-control-lg {
 body {
   background-color: rgb(63, 63, 154);
 }
+
+a {
+  text-decoration: none;
+}
