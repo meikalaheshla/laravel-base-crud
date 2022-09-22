@@ -3,7 +3,8 @@
 @section('content')
 <div class="container">
     <div class="card">
-        
+        @dump($comics)
+        ciao
     </div>
 </div>
 @endsection
