@@ -19,8 +19,7 @@
                         <input type="number" class="form-control" id="price" name="price" placeholder="Prezzo del comics" min="0" value="0" step="0.1">
                         <label for="series" class="form-label">Serie</label>
                         <input type="text" class="form-control" id="series" name="series" placeholder="Serie">
-                        <label for="series" class="form-label">Serie</label>
-                        <input type="text" class="form-control" id="series" name="series" placeholder="Serie">
+                       
                         <label for="sale_date" class="form-label">data di vendita</label>
                         <input type="text" class="form-control" id="sale_date" name="sale_date" placeholder="YYYY-MM-DD">
                         <label for="type" class="form-label">Genere</label>

@@ -33,10 +33,26 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Comic $comic)
+    public function store(Request $request)
     {
         $data = $request->all();
-        dd($data);
+       // dd($data);
+
+    //Creo una nuova istanza della classe Comic 
+
+        $comic = new Comic();
+
+    //Immetto gli attributi del form precedentemente storati in $data
+       
+        $comic->fill($data);
+        
+    //Salvo    
+
+        $comic->save();
+
+        return redirect()->route('comics.index');
+
+
     }
 
     /**
