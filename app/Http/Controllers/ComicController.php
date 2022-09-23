@@ -46,7 +46,7 @@ class ComicController extends Controller
        
         $comic->fill($data);
         
-    //Salvo    
+    //Salvo sul db
 
         $comic->save();
 
