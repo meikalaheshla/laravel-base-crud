@@ -17,6 +17,9 @@
 
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
+            <div>
+                    <a class="btn  btn-secondary me-2"href="{{route('comics.index')}}">Torna ai Comics</a>
+                </div>
                 <div class="price">
 
                     <span>${{$comic->price}}</span>

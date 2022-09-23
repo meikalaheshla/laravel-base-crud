@@ -4,7 +4,8 @@
 <div class="container">
     <div class="card p-3">
         <h1>Modifica il tuo fumetto</h1>
-        <form action="{{route('comics.store')}}" method="POST">
+        <form action="{{route('comics.update', $comic->id)}}" method="POST">
+            @method('PUT')
             @csrf
             <div class="row">
                 <div class="col-4">
