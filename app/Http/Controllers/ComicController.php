@@ -50,6 +50,8 @@ class ComicController extends Controller
 
         $comic->save();
 
+        //$new_comic = Comic::create($data) restituisce l'istanza dopo aver creato sul db l'elemento permettendomi di avere anche l'id per eventualmente usare il redirect sull'elemento 
+
         return redirect()->route('comics.index');
 
 
