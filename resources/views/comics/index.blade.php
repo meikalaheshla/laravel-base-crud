@@ -24,9 +24,13 @@
                         
                         <p class="card-text text-truncate">{{$comic->description}}</p>
                     </div>
-                    <div class="card-footer ">
+                    <div class="card-footer d-flex justify-content-between align-items-center ">
                         <div class="price">
                             <small class="text-muted">${{$comic->price}}</small>
+                        </div>
+                        <div class="utility-buttons">
+                            <a href="{{route('comics.edit', $comic->id)}}"class="btn btn-secondary rounded-pill">Modifica</a>
+                            <button class="btn btn-danger rounded-pill">Cancella</button>
                         </div>
 
 
