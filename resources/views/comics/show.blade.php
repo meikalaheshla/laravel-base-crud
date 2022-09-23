@@ -24,9 +24,13 @@
 
                     <span>${{$comic->price}}</span>
                 </div>
-                <div class="utility-buttons">
-                     <a href="{{route('comics.edit', $comic->id)}}"class="btn btn-secondary rounded-pill">Modifica</a>
-                     <button class="btn btn-danger rounded-pill">Cancella</button>
+                <div class="utility-buttons d-flex">
+                     <a href="{{route('comics.edit', $comic->id)}}"class="btn btn-secondary rounded-pill me-2">Modifica</a>
+                     <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                         @csrf
+                         @method('DELETE')
+                        <button type="submit"class="btn btn-danger rounded-pill">Cancella</button>
+                    </form>
                 </div>
             </div>
         </div>
